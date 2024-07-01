@@ -1,0 +1,35 @@
+{
+  "name": "HTML",
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "answers": [
+        "Hyperlinks and Text Markup Language",
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinking Text Marking Language"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "answers": ["<link>", "<a>", "<href>", "<url>"],
+      "correct": 2
+    },
+    {
+      "question": "Which tag is used to create a table in HTML?",
+      "answers": ["<tr>", "<td>", "<table>", "<tab>"],
+      "correct": 3
+    },
+    {
+      "question": "What is the correct HTML element for the largest heading?",
+      "answers": ["<h6>", "<header>", "<heading>", "<h1>"],
+      "correct": 4
+    },
+    {
+      "question": "Which HTML element is used for specifying a footer for a document or section?",
+      "answers": ["<footer>", "<bottom>", "<foot>", "<section>"],
+      "correct": 1
+    }
+  ]
+}

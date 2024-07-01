@@ -1,0 +1,55 @@
+{
+  "name": "Javascript",
+  "questions": [
+    {
+      "question": "What is the correct JavaScript syntax to change the content of the HTML element <p id=\"demo\">This is a demonstration.</p>?",
+      "answers": [
+        "#demo.innerHTML = \"Hello World!\";",
+        "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+        "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+        "document.getElementByName(\"p\").innerHTML = \"Hello World!\";"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Where is the correct place to insert a JavaScript?",
+      "answers": [
+        "The <body> section",
+        "Both the <head> section and the <body> section are correct",
+        "The <head> section",
+        "The <footer> section"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "How do you write \"Hello World\" in an alert box?",
+      "answers": [
+        "msg(\"Hello World\");",
+        "alert(\"Hello World\");",
+        "msgBox(\"Hello World\");",
+        "alertBox(\"Hello World\");"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "answers": [
+        "function:myFunction()",
+        "function myFunction()",
+        "function => myFunction()",
+        "function = myFunction()"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "How do you call a function named \"myFunction\"?",
+      "answers": [
+        "call.myFunction()",
+        "myFunction()",
+        "call function myFunction()",
+        "call myFunction()"
+      ],
+      "correct": 2
+    }
+  ]
+}

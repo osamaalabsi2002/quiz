@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.contactUs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.paraAboveImage {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  color: white;
+}
+.upContactUs {
+  font-weight: bold;
+  font-size: 4vw;
+  margin-bottom: 3%;
+}
+.innerTxt {
+  font-size: 1.6vw;
+}
+.contactUsForm {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fullName,
+.email,
+.subject,
+.msg {
+  height: 3vw;
+  margin-bottom: 5%;
+}
+.sendMsg {
+  height: 4vw;
+  width: 25%;
+  border-radius: 3vw;
+  border: 0;
+  background-color: #2d6cdf;
+  color: white;
+}

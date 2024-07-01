@@ -1,0 +1,35 @@
+{
+  "name": "CSS",
+  "questions": [
+    {
+      "question": "What does CSS stand for?",
+      "answers": [
+        "Colorful Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style Sheets"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which CSS property is used to change the text color of an element?",
+      "answers": ["text-color", "color", "font-color", "background-color"],
+      "correct": 2
+    },
+    {
+      "question": "Which property is used to change the background color?",
+      "answers": ["color", "background-color", "background", "bg-color"],
+      "correct": 2
+    },
+    {
+      "question": "Which property is used to change the font of an element?",
+      "answers": ["font-family", "font-weight", "text-style", "font-style"],
+      "correct": 1
+    },
+    {
+      "question": "Which property is used to change the left margin of an element?",
+      "answers": ["padding-left", "left-margin", "padding", "margin-left"],
+      "correct": 4
+    }
+  ]
+}

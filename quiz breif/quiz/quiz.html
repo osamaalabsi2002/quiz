@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="topContainer">
+            <div id="topBlock">
+                <h3 id="topLeft">Quiz</h3>
+                <div id="topRight">
+                    <div id="timeRemainingBlock">
+                        <p id="timeRemainingText">Time Remaining </p>
+                        <p id="time"></p>
+                    </div>
+                    <div id="questionButtonsBlock">
+                        <p class="questionButton" id="questionButton1" onclick="goToQuestion(1)">1</p>
+                        <p class="questionButton" id="questionButton2" onclick="goToQuestion(2)">2</p>
+                        <p class="questionButton" id="questionButton3" onclick="goToQuestion(3)">3</p>
+                        <p class="questionButton" id="questionButton4" onclick="goToQuestion(4)">4</p>
+                        <p class="questionButton" id="questionButton5" onclick="goToQuestion(5)">5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="middleContainer">
+            <div id="middleBlock">
+                <div class="questionBlock">
+                    <div class="questionText">
+                        1. <span id="q1">Ratione eius quis quia nostrum nemo laudantium aspernatur doloribus dolorum, odit nobis. Dolore atque debitis maxime ea illo dolor fugit vitae excepturi!</span>
+                    </div>
+                    <div class="answersBlock">
+                        <div class="form-check answer" onclick="checkAnswer('q1a1'), enable(1)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(1)" id="q1a1">
+                            <label class="form-check-label" id="q1a1Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q1a2'), enable(1)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(1)" id="q1a2">
+                            <label class="form-check-label" id="q1a2Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q1a3'), enable(1)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(1)" id="q1a3">
+                            <label class="form-check-label" id="q1a3Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q1a4'), enable(1)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(1)" id="q1a4">
+                            <label class="form-check-label" id="q1a4Text">
+                              Default radio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="questionBlock">
+                    <div class="questionText">
+                        2. <span id="q2">Ratione eius quis quia nostrum nemo laudantium aspernatur doloribus dolorum, odit nobis. Dolore atque debitis maxime ea illo dolor fugit vitae excepturi!</span>
+                    </div>
+                    <div class="answersBlock">
+                        <div class="form-check answer" onclick="checkAnswer('q2a1'), enable(2)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(2)" id="q2a1">
+                            <label class="form-check-label" id="q2a1Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q2a2'), enable(2)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(2)" id="q2a2">
+                            <label class="form-check-label" id="q2a2Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q2a3'), enable(2)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(2)" id="q2a3">
+                            <label class="form-check-label" id="q2a3Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q2a4'), enable(2)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(2)" id="q2a4">
+                            <label class="form-check-label" id="q2a4Text">
+                              Default radio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="questionBlock">
+                    <div class="questionText">
+                        3. <span id="q3">Ratione eius quis quia nostrum nemo laudantium aspernatur doloribus dolorum, odit nobis. Dolore atque debitis maxime ea illo dolor fugit vitae excepturi!</span>
+                    </div>
+                    <div class="answersBlock">
+                        <div class="form-check answer" onclick="checkAnswer('q3a1'), enable(3)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(3)" id="q3a1">
+                            <label class="form-check-label" id="q3a1Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q3a2'), enable(3)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(3)" id="q3a2">
+                            <label class="form-check-label" id="q3a2Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q3a3'), enable(3)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(3)" id="q3a3">
+                            <label class="form-check-label" id="q3a3Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q3a4'), enable(3)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(3)" id="q3a4">
+                            <label class="form-check-label" id="q3a4Text">
+                              Default radio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="questionBlock">
+                    <div class="questionText">
+                        4. <span id="q4">Ratione eius quis quia nostrum nemo laudantium aspernatur doloribus dolorum, odit nobis. Dolore atque debitis maxime ea illo dolor fugit vitae excepturi!</span>
+                    </div>
+                    <div class="answersBlock">
+                        <div class="form-check answer" onclick="checkAnswer('q4a1'), enable(4)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(4)" id="q4a1">
+                            <label class="form-check-label" id="q4a1Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q4a2'), enable(4)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(4)" id="q4a2">
+                            <label class="form-check-label" id="q4a2Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q4a3'), enable(4)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(4)" id="q4a3">
+                            <label class="form-check-label" id="q4a3Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q4a4'), enable(4)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(4)" id="q4a4">
+                            <label class="form-check-label" id="q4a4Text">
+                              Default radio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="questionBlock">
+                    <div class="questionText">
+                        5. <span id="q5">Ratione eius quis quia nostrum nemo laudantium aspernatur doloribus dolorum, odit nobis. Dolore atque debitis maxime ea illo dolor fugit vitae excepturi!</span>
+                    </div>
+                    <div class="answersBlock">
+                        <div class="form-check answer" onclick="checkAnswer('q5a1'), enable(5)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(5)" id="q5a1">
+                            <label class="form-check-label" id="q5a1Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q5a2'), enable(5)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(5)" id="q5a2">
+                            <label class="form-check-label" id="q5a2Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q5a3'), enable(5)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(5)" id="q5a3">
+                            <label class="form-check-label" id="q5a3Text">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check answer" onclick="checkAnswer('q5a4'), enable(5)">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" onchange="enable(5)" id="q5a4">
+                            <label class="form-check-label" id="q5a4Text">
+                              Default radio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottomContainer">
+            <div id="bottomBlock">
+                <div id="questionNumberFrom5"><p><span id="questionNumberDynamic">1</span> out of 5</p></div>
+                <div id="bottomRight">
+                    <div id="submitButton" onclick="">Submit</div>
+                    <div id="prevArrow" class="arrows" onclick="goPrev()"><img src="leftarrow.png"></div>
+                    <div id="nextArrow" class="arrows" onclick="goNext()"><img src="rightarrow.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

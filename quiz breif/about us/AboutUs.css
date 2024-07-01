@@ -1,0 +1,495 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* hover effect */
+/* Base styles for the element */
+.hoverEffect {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Smooth, lighter black shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
+}
+
+/* Hover effect */
+.hoverEffect:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); /* Darker, more pronounced shadow on hover */
+  transform: scale(
+    1.03
+  ); /* Slightly scales up the element for a subtle zoom effect */
+}
+/* nav */
+/* Full width and sticky navbar */
+.navbar {
+  width: 100%; /* Full width */
+  position: fixed !important; /* Stick to the top of the viewport */
+  top: 0;
+  left: 0;
+  z-index: 1030; /* Make sure it is above other content */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly opaque background to enhance blur effect */
+  padding: 0; /* Remove default padding */
+}
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 50%;
+}
+/* Ensure container fluid fills the width */
+.container-fluid {
+  padding: 0; /* Remove default padding */
+  height: 11.5vh;
+  width: 96%;
+}
+
+/* Responsive styling for logo and buttons */
+.logoImage {
+  width: 16%; /* Adjust logo width */
+}
+
+.contactUsButton,
+.btn {
+  font-size: 1.4vw; /* Font size for buttons */
+}
+
+/* Base button style */
+.btn {
+  background-color: #10669d;
+  margin-right: 1vw !important;
+  color: white;
+  width: 102%;
+  transition: color 0.3s ease; /* Separate transition for color */
+  transition: opacity 0.3s ease; /* Separate transition for color */
+  opacity: 0.7;
+}
+
+/* Hover effect */
+.btn:hover {
+  opacity: 1;
+  color: white !important;
+}
+
+.contactUsButton {
+  color: black;
+}
+
+.contactUsButton:hover {
+  color: #10669d !important;
+}
+
+/* Content padding to prevent overlap */
+body {
+  margin: 0;
+  padding-top: 70px; /* Adjust this based on the height of your navbar */
+}
+/* Base button style */
+.btn {
+  background-color: #10669d;
+  margin-right: 1vw !important;
+  color: white;
+  width: 102%;
+  transition: color 0.3s ease; /* Separate transition for color */
+  transition: opacity 0.3s ease; /* Separate transition for color */
+  opacity: 0.7;
+}
+
+/* Hover effect */
+.btn:hover {
+  opacity: 1;
+  color: white !important;
+}
+
+.contactUsButton {
+  color: black;
+}
+
+.contactUsButton:hover {
+  color: #10669d !important;
+}
+
+/* Content padding to prevent overlap */
+body {
+  margin: 0;
+  padding-top: 70px; /* Adjust this based on the height of your navbar */
+}
+/* description */
+.description {
+  height: 30vw;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.descriptionTXT {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  color: white;
+  font-size: 2vw;
+}
+
+/* home  */
+.home {
+  position: relative; /* Ensure the container positions the child absolutely */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+.homeImage {
+  position: absolute; /* Position absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full container width */
+  height: 100%; /* Full container height */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  z-index: -1; /* Place behind other content */
+}
+.paraAboveImage {
+  height: 100vh;
+  background-color: rgba(40, 78, 115, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  color: white;
+}
+.upHome {
+  font-weight: bold;
+  font-size: 4vw;
+  margin-bottom: 3%;
+}
+.innerTxt {
+  font-size: 1.6vw;
+}
+
+/* quiz cards */
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 90vh;
+  gap: 2.5%;
+}
+.textYoutube {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Smooth, lighter black shadow */
+  width: 50%;
+  padding: 10px; /* Optional: Add padding for better spacing */
+  border-radius: 5px; /* Optional: Rounded corners for a softer look */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
+}
+
+.card1,
+.card2,
+.card3 {
+  position: relative; /* Add this to use z-index on children */
+  display: flex;
+  background-color: rgb(224, 220, 220);
+  border-radius: 1vh;
+  /* border: 1px solid rgb(53, 47, 47); */
+  overflow: hidden; /* Ensure the shadow is not clipped */
+}
+.textQuizContainer {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 4%;
+}
+.imgg {
+  width: 40%;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%; /* Match the width of the image */
+  height: 100%;
+  background-color: transparent; /* Start with a transparent background */
+  z-index: 2; /* Bring overlay above other elements */
+  pointer-events: none; /* Ensure the overlay doesn't block interactions */
+  transition: box-shadow 0.3s ease;
+}
+
+.right {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-left: 1%;
+  width: 60%;
+}
+
+.button {
+  width: 65%;
+  height: 13%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: white;
+  color: black;
+  border-radius: 1vh;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.button:hover {
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 0;
+  color: white;
+}
+
+h2 {
+  color: rgb(28, 25, 25);
+}
+
+.quizDuration,
+.descOfQuiz,
+.numberOfQuestions {
+  margin-bottom: 5%;
+  color: #828aa1;
+}
+
+.information {
+  margin-top: 5%;
+}
+/* footer */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul.social-icon {
+  display: flex;
+  flex-direction: row;
+  left: 10px;
+  top: 0px;
+  width: 40%;
+  height: 10%;
+  column-gap: 10px;
+  flex-wrap: nowrap;
+  margin-right: 1%;
+}
+
+.footer {
+  position: relative;
+  width: 102%;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100px;
+  /* margin-top: 20vh; */
+  margin-top: 5%;
+
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: white !important;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+  color: #1aa7d4;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 3%;
+}
+img.icons {
+  width: 40px;
+}
+@media (max-width: 900px) {
+  /* nav */
+  .logoImage {
+    width: 16%;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 1.8vw;
+  }
+  .upHome {
+    font-weight: bold;
+    font-size: 6vw;
+    margin-bottom: 3%;
+  }
+  .innerTxt {
+    font-size: 2vw;
+  }
+  .navbar-nav .nav-link {
+    font-size: 2vw;
+  }
+  .description {
+    height: 40vw;
+  }
+  .descriptionTXT {
+    font-size: 2.7vw;
+  }
+  h2 {
+    color: rgb(28, 25, 25);
+    font-size: 3vw;
+  }
+  .quizDuration,
+  .descOfQuiz,
+  .numberOfQuestions {
+    margin-bottom: 5%;
+    color: #828aa1;
+    font-size: 1.8vw;
+  }
+  .btn {
+    font-size: 2vw;
+  }
+  .logoImage {
+    width: 22%;
+  }
+}
+@media (max-width: 640px) {
+  .upHome {
+    font-weight: bold;
+    font-size: 7vw;
+    margin-bottom: 3%;
+  }
+  .innerTxt {
+    font-size: 2.4vw;
+  }
+  .description {
+    height: 50vw;
+  }
+  .descriptionTXT {
+    font-size: 3.2vw;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 200vh;
+    gap: 2.5%;
+  }
+  h2 {
+    color: rgb(28, 25, 25);
+    font-size: 3.4vw;
+  }
+  .quizDuration,
+  .descOfQuiz,
+  .numberOfQuestions {
+    margin-bottom: 5%;
+    color: #828aa1;
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 450px) {
+  .logoImage {
+    width: 30%;
+  }
+  .upHome {
+    font-size: 7.3vw;
+  }
+  .innerTxt {
+    font-size: 2.6vw;
+  }
+  .description {
+    height: 60vw;
+  }
+  .descriptionTXT {
+    font-size: 3.5vw;
+  }
+  h2 {
+    color: rgb(28, 25, 25);
+    font-size: 4vw;
+  }
+  .quizDuration,
+  .descOfQuiz,
+  .numberOfQuestions {
+    margin-bottom: 5%;
+    color: #828aa1;
+    font-size: 3.4vw;
+  }
+}
